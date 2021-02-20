@@ -1,10 +1,10 @@
 @font-face {
     font-family: "fraunces";
-    src: url(../prueba02/fonts/Fraunces.ttf);
+    src: url(../web-guide/fonts/Fraunces.ttf);
 }
 @font-face {
     font-family: "roboto";
-    src: url(../prueba02/fonts/Roboto.ttf);
+    src: url(../web-guide/fonts/Roboto.ttf);
 }
 * {
     box-sizing: border-box;
@@ -13,7 +13,10 @@ body {
     margin: 0%;
     font-family: "roboto";
 }
-
+img {
+    display: block;
+    max-width: 100%;
+}
 .container--flex {
     display: flex;
     justify-content: space-between;
@@ -43,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 .banner {
-    background: url(../prueba02/images/image1.jpg);
+    background: url(../web-guide/images/image1.jpg);
     min-height: 350px;
     position: absolute;
     top: 0%;
@@ -68,4 +71,60 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateX(-50%) translateY(-50);
     color: white;
     font-size: 1.5em;
+}
+.main {
+    margin-top: 250px;
+    padding: 15px;
+}
+.welcome {
+    text-align: center;
+    padding: 20px 0;
+}
+.welcome__title {
+    font-size: 2em;
+    position: relative;
+}
+.welcome__title::before {
+    content: "";
+    width: 25%;
+    position: absolute;
+    top: -20px;
+    left: 37%;
+    height: 3px;
+    background: #EEAD33;
+}
+.welcome__txt {
+    margin-bottom: 50px;
+    font-size: 1.3em;
+    color: #777;
+}
+.welcome__btn {
+    display: block;
+    border: 2px solid #EEAD33;
+    border-radius: 5px;
+    width: 200px;
+    margin: auto;
+    padding: 10px;
+    text-decoration: none;
+    color: #EEAD33;
+    font-size: 1.3em;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.welcome__btn:hover {
+    background: #EEAD33;
+    color: white;
+}
+.design__item {
+    position: relative;
+
+}
+.design__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50) translateY(-50);
+}
+.design.img {
+
 }
