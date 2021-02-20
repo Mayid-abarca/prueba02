@@ -1,13 +1,26 @@
+@font-face {
+    font-family: "fraunces";
+    src: url(../web-guide/fonts/Fraunces.ttf);
+}
+@font-face {
+    font-family: "roboto";
+    src: url(../web-guide/fonts/Roboto.ttf);
+}
 * {
     box-sizing: border-box;
 }
 body {
     margin: 0%;
+    font-family: "roboto";
 }
+
 .container--flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "fraunces";
 }
 .main-header {
     padding: 10px;
@@ -30,7 +43,7 @@ body {
     display: none;
 }
 .banner {
-    background: url(../prueba02/images/image1.jpg);
+    background: url(../web-guide/images/image1.jpg);
     min-height: 350px;
     position: absolute;
     top: 0%;
@@ -38,12 +51,21 @@ body {
     width: 100%;
     z-index: -999;
 }
+.banner::before {
+    content: "";
+    width: 100%;
+    min-height: 350px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
 .banner__content {
     padding: 10px;
     position: absolute;
     top: 25%;
     left: 15%;
-    transform: translateX(-50%$) translateY(-50);
+    transform: translateX(-50%) translateY(-50);
     color: white;
     font-size: 1.5em;
 }
