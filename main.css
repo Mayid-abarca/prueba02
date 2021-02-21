@@ -1,10 +1,10 @@
 @font-face {
     font-family: "fraunces";
-    src: url(../prueba02/fonts/Fraunces.ttf);
+    src: url(../web-guide/fonts/Fraunces.ttf);
 }
 @font-face {
     font-family: "roboto";
-    src: url(../prueba02/fonts/Roboto.ttf);
+    src: url(../web-guide/fonts/Roboto.ttf);
 }
 * {
     box-sizing: border-box;
@@ -41,12 +41,102 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     padding: 5px 12px;
     border-radius: 5px;
+    cursor: pointer;
 }
 .menu {
-    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0%;
+    background: #212121;
+    width: 100%;
+    list-style: none;
+    padding: 20px;
+    margin: 0%;
+}
+.menu__item {
+    padding: 20px;
+    text-align: center;
+}
+.menu__link {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+.menu__link::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-right: 2px solid #EEAD33;
+    border-top: 2px solid #EEAD33;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+.menu__link::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-left: 2px solid #EEAD33;
+    border-bottom: 2px solid #EEAD33;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+}
+.menu__link span::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-left: 2px solid #EEAD33;
+    border-top: 2px solid #EEAD33;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.menu__link span::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-bottom: 2px solid #EEAD33;
+    border-right: 2px solid #EEAD33;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+}
+.menu__link span {
+    padding: 12px;
+}
+.menu__link--select::before, .menu__link--select::after, .menu__link--select span::before, .menu__link--select span::after {
+    opacity: 1;
+}
+.menu__item:hover .menu__link::before, .menu__item:hover .menu__link::after, .menu__item:hover .menu__link span::before, .menu__item:hover .menu__link span::after {
+    opacity: 1;
+}
+.nav-social {
+    display: flex;
+    justify-content: center;
+}
+.nav-social__item {
+    width: 35px;
+    height: 20px;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+}
+.fa-facebook {
+    color: #3b5998;
+}
+.fa-twitter-square {
+    color: #00acee;
+}
+.fa-dribbble-square {
+    color: #ea4c89;
 }
 .banner {
-    background: url(../prueba02/images/image1.jpg);
+    background: url(../web-guide/images/image1.jpg);
     min-height: 350px;
     position: absolute;
     top: 0%;
@@ -74,11 +164,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main {
     margin-top: 250px;
-    padding: 15px;
 }
 .welcome {
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
 }
 .welcome__title {
     font-size: 2em;
@@ -115,16 +204,47 @@ h1, h2, h3, h4, h5, h6 {
     background: #EEAD33;
     color: white;
 }
+.container-design {
+    margin: 20px 0;
+}
 .design__item {
     position: relative;
-
+}
+.design__item::before {
+    width: 100%;
+    min-height: 350px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0%;
+    left: 0%;
 }
 .design__title {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translateX(-50) translateY(-50);
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
 }
-.design.img {
+.design__title::before {
+    content: "";
+    width: 40%;
+    position: absolute;
+    top: -20px;
+    left: 37%;
+    height: 1px;
+    background: #EEAD33;
+}
+.design__title::after {
+    content: "";
+    width: 40%;
+    position: absolute;
+    bottom: -20px;
+    left: 37%;
+    height: 1px;
+    background: #EEAD33;
+}
+.design__img {
 
 }
