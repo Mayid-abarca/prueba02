@@ -1,10 +1,10 @@
 @font-face {
     font-family: "fraunces";
-    src: url(../web-guide/fonts/Fraunces.ttf);
+    src: url(../prueba02/fonts/Fraunces.ttf);
 }
 @font-face {
     font-family: "roboto";
-    src: url(../web-guide/fonts/Roboto.ttf);
+    src: url(../prueba02/fonts/Roboto.ttf);
 }
 * {
     box-sizing: border-box;
@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #ea4c89;
 }
 .banner {
-    background: url(../web-guide/images/image1.jpg);
+    background: url(../prueba02/images/image1.jpg);
     min-height: 350px;
     position: absolute;
     top: 0%;
