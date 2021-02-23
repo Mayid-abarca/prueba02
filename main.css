@@ -314,3 +314,31 @@ h1, h2, h3, h4, h5, h6 {
 .box__txt {
     color: #999;
 }
+.newsletter {
+    margin: 50px 0;
+}
+.form {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.form__mail {
+    display: block;
+    background: #ddd;
+    color: black;
+    padding: 15px;
+    width: 80%;
+    border: none;
+    font-size: 1em;
+}
+.form__submit {
+    display: block;
+    background: #EEAD33;
+    border: none;
+    padding: 15px;
+    width: 20%;
+    color: white;
+    font-size: 1em;
+}
